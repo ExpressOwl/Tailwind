@@ -579,6 +579,18 @@ video {
   max-width: 28rem;
 }
 
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+.scroll-mt-10 {
+  scroll-margin-top: 2.5rem;
+}
+
+.scroll-mt-40 {
+  scroll-margin-top: 10rem;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -791,6 +803,10 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:scroll-smooth {
+    scroll-behavior: smooth;
   }
 
   .sm\:text-left {
