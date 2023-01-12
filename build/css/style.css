@@ -870,16 +870,6 @@ video {
   position: absolute;
 }
 
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
-
 .after\:-bottom-20::after {
   content: var(--tw-content);
   bottom: -5rem;
@@ -888,18 +878,6 @@ video {
 .after\:right-0::after {
   content: var(--tw-content);
   right: 0px;
-}
-
-.after\:translate-x-2::after {
-  content: var(--tw-content);
-  --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:translate-y-2::after {
-  content: var(--tw-content);
-  --tw-translate-y: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:-translate-x-2::after {
@@ -939,11 +917,6 @@ video {
 .after\:opacity-25::after {
   content: var(--tw-content);
   opacity: 0.25;
-}
-
-.after\:content-\[\'\\201C\'\]::after {
-  --tw-content: '\201C';
-  content: var(--tw-content);
 }
 
 .after\:content-\[\'\\201D\'\]::after {
@@ -1062,5 +1035,17 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+}
+
+@media (min-aspect-ratio: 3/2) {
+  .widescreen\:section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+}
+
+@media (min-aspect-ratio: 1/2) {
+  .tallscreen\:section-min-height {
+    min-height: calc(100vh - 68px);
   }
 }
