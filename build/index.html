@@ -246,9 +246,42 @@
             required
             class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
           ></textarea>
-          <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border-solid border-slate-900 dark:border-none">Submit</button>
+          <button
+            class="w-48 rounded-xl border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+          >
+            Submit
+          </button>
         </form>
       </section>
     </main>
+
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Acme Rocket-Powered Products, Inc.</h2>
+          555 Astro way <br />
+          Fairfield, New Jersey 12345-5555 <br />
+          Email:
+          <a href="mailto:inquiries@acmerockets.com"
+            >Inquiries@AcmeRockets.com</a
+          >
+          <br />
+          Phone: <a href="tel:+1555555555">(555) 555-5555</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">
+            Copyright &copy; <span id="year">2023</span>
+          </p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
