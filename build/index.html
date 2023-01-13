@@ -17,9 +17,12 @@
         <div>
           <button
             id="hamburger-button"
-            class="cursor-pointer text-3xl md:hidden"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
           >
-            &#9776;
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
           </button>
           <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
@@ -30,9 +33,9 @@
       </section>
       <section
         id="mobile-menu"
-        class="absolute top-0 hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
       >
-        <button class="self-end px-6 text-8xl">&times;</button>
+        <!-- <button class="self-end px-6 text-8xl">&times;</button> -->
         <nav
           aria-label="mobile"
           class="flex min-h-screen flex-col items-center py-8"
