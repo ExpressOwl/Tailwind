@@ -1,3 +1,5 @@
+document.getElementById('year').innerHTML = new Date().getFullYear();
+
 const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-button");
   const mobileMenu = document.getElementById('mobile-menu');
